@@ -1,0 +1,21 @@
+{
+  "name": "BackEnd-MobileFood",
+  "version": "1.0.0",
+  "description": "Create a new project \r npm init --yes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.15.0",
+    "graphql": "^15.1.0",
+    "sequelize": "^6.2.2",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.1.0"
+  }
+}
