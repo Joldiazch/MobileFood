@@ -4,7 +4,8 @@
   "description": "Create a new project \r npm init --yes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./graphql_api/index.js"
   },
   "keywords": [],
   "author": "",
