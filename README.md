@@ -1,12 +1,17 @@
 # MobileFood! Coding Challenge - Chiper
+![enter image description here](https://i.ibb.co/vXR231Y/mobilefood1.png)
 
 The development of this web application consisted of Designing and implementing a platform that would allow people to know what types of food trucks can be found near a specific location on a map.
 The data was taken from [DataSF](http://www.datasf.org/) : [Food Trucks](https://data.sfgov.org/Permitting/Mobile-Food-Facility-Permit/rqzj-sfat). This allows anyone in the S.F. area to know which are the nearest food trucks, what are their working hours, and what kind of meals could be consumed in each one.
 
+The project is divided in Frontend and Backend, the first one is located in [this branch](https://github.com/Joldiazch/MobileFood/tree/reactapp), the backend in [this one](https://github.com/Joldiazch/MobileFood/tree/api-graphql), both deployed in heroku.
 #### You can go to the platform [here.](https://mobilefoodreactapp.herokuapp.com/)
-- As it is shown in the file load-truck-data.js for this sample 5 data were loaded since at the moment sqllite3 is used only although in a beginning it was planned to use RDS and postgresql. these data are rendered in the map and can be.
-- The project is divided in Frontend and Backend, the first one is located in [this branch](https://github.com/Joldiazch/MobileFood/tree/reactapp), the backend in [this one](https://github.com/Joldiazch/MobileFood/tree/api-graphql).
-both deployed in heroku.
+##### Why is the page only displaying the information of 5 trucks? In the Issues part I explain.
+
+# Data Description
+The data is broken down into endpoints:
+- The first one shows Mobile Food Facility Permits including name of vendor, location, type of food sold and status of permit. (643 records are stored)
+- the second  includes the day of the week, the start and end time, the location and a description of the type of food sold by the vendor. (1000 records are stored)
 
 ## Technology Stack
 **Backend**
@@ -44,4 +49,4 @@ It consisted of using the ORM provided by squalize to build the Truck and Schedu
 In this part I made use of the UI material style components with which I achieved a friendly and beautiful user interface at the same time. The map is rendered in a component called Map in the file Mapsection.js in this component the magic happens, the map is rendered with the points obtained by the query made by Apollo client to the api of graphql. in addition it communicates with the component of ato completed with which a food can be selected, that selection listens to the components children and finally it is rendered in the map only the truck where the selected food is sold.
 
 # Issues
-1. Due to a last minute problem with the RDS instance in AWS, in production is running the test database (Sqlite3), that's why in the Map are shown only 5 points that are the data that were stored in the development stage to make the respective tests. However, the Application does its corresponding work, consults the api, renders those data in the map and also uses them to auto complete and render again the selection of this field.
+1. Due to a last minute problem with the RDS instance in AWS, the test database (Sqlite3) is running in production, so the Map shows only 5 points which are the data that were stored in the development stage to make the respective tests. However, the Application does its corresponding work, consults the API, renders those data in the map and also uses them to autocomplete and render again the selection of this field. That is, if the RDS instance in AWS is enabled, at this time the 643 trucks (points on the map) will be displayed, which Sqlite3 cannot do because it only has stored the data of 5 trucks and their respective Schedules.
