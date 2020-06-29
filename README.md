@@ -1,18 +1,17 @@
 # MobileFood! Coding Challenge - Chiper
+![enter image description here](https://i.ibb.co/vXR231Y/mobilefood1.png)
 
 The development of this web application consisted of Designing and implementing a platform that would allow people to know what types of food trucks can be found near a specific location on a map.
 The data was taken from [DataSF](http://www.datasf.org/) : [Food Trucks](https://data.sfgov.org/Permitting/Mobile-Food-Facility-Permit/rqzj-sfat). This allows anyone in the S.F. area to know which are the nearest food trucks, what are their working hours, and what kind of meals could be consumed in each one.
 
+The project is divided in Frontend and Backend, the first one is located in [this branch](https://github.com/Joldiazch/MobileFood/tree/reactapp), the backend in [this one](https://github.com/Joldiazch/MobileFood/tree/api-graphql), both deployed in heroku.
+#### You can go to the platform [here.](https://mobilefoodreactapp.herokuapp.com/)
+##### Why is the page only displaying the information of 5 trucks? In the Issues part I explain.
 
 # Data Description
 The data is broken down into endpoints:
-- The first one shows Mobile Food Facility Permits including name of vendor, location, type of food sold and status of permit.
-- the second incluye el día de la semana, la hora de inicio y fin, el lugar y una descripción del tipo de comida vendida por el vendedor.
-
-#### You can go to the platform [here.](https://mobilefoodreactapp.herokuapp.com/)
-- As it is shown in the file load-truck-data.js for this sample 5 data were loaded since at the moment sqllite3 is used only although in a beginning it was planned to use RDS and postgresql. these data are rendered in the map and can be.
-- The project is divided in Frontend and Backend, the first one is located in [this branch](https://github.com/Joldiazch/MobileFood/tree/reactapp), the backend in [this one](https://github.com/Joldiazch/MobileFood/tree/api-graphql).
-both deployed in heroku.
+- The first one shows Mobile Food Facility Permits including name of vendor, location, type of food sold and status of permit. (643 records are stored)
+- the second  includes the day of the week, the start and end time, the location and a description of the type of food sold by the vendor. (1000 records are stored)
 
 ## Technology Stack
 **Backend**
