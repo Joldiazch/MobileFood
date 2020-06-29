@@ -1,4 +1,4 @@
-MobileFood! Coding Challenge - Chiper
+# MobileFood! Coding Challenge - Chiper
 
 The development of this web application consisted of Designing and implementing a platform that would allow people to know what types of food trucks can be found near a specific location on a map.
 The data was taken from [DataSF](http://www.datasf.org/) : [Food Trucks](https://data.sfgov.org/Permitting/Mobile-Food-Facility-Permit/rqzj-sfat). This allows anyone in the S.F. area to know which are the nearest food trucks, what are their working hours, and what kind of meals could be consumed in each one.
