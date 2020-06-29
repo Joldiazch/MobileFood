@@ -34,7 +34,7 @@ This Model is built in the models folder in the [api-graphql branch.](https://gi
 ![enter image description here](https://i.ibb.co/b3z8Cs5/Blank-Diagram-1.png)
 
 Note:
-Due to last minute problems with the AWS RDS instance, only the test database (sqllite3) is running in production. It contains only the data of % trucks and their respective Schedules as listed in section **Entity relationship** model of this README. Please see the section on **Issues**.
+Due to last minute problems with the AWS RDS instance, only the test database (sqllite3) is running in production. It contains only the data of 5 trucks and their respective Schedules as listed in section **Entity relationship** model of this README. Please see the section on **Issues**.
 
 # Development:
 **backend**
