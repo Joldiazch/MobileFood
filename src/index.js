@@ -27,9 +27,6 @@ ReactDOM.render(
   <ApolloProvider client={client}>
   <Router history={hist}>
     <Switch>
-      <Route path="/componets" component={Components} />
-      <Route path="/profile-page" component={ProfilePage} />
-      <Route path="/login-page" component={LoginPage} />
       <Route path="/" component={LandingPage} />
     </Switch>
   </Router>
