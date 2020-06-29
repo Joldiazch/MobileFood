@@ -3,9 +3,9 @@
 The development of this web application consisted of Designing and implementing a platform that would allow people to know what types of food trucks can be found near a specific location on a map.
 The data was taken from [DataSF](http://www.datasf.org/) : [Food Trucks](https://data.sfgov.org/Permitting/Mobile-Food-Facility-Permit/rqzj-sfat). This allows anyone in the S.F. area to know which are the nearest food trucks, what are their working hours, and what kind of meals could be consumed in each one.
 
-You can go to the platform [here.](https://mobilefoodreactapp.herokuapp.com/)
-As it is shown in the file load-truck-data.js for this sample 5 data were loaded since at the moment sqllite3 is used only although in a beginning it was planned to use RDS and postgresql. these data are rendered in the map and can be.
-The project is divided in Frontend and Backend, the first one is located in [this branch](https://github.com/Joldiazch/MobileFood/tree/reactapp), the backend in [this one](https://github.com/Joldiazch/MobileFood/tree/api-graphql).
+#### You can go to the platform [here.](https://mobilefoodreactapp.herokuapp.com/)
+- As it is shown in the file load-truck-data.js for this sample 5 data were loaded since at the moment sqllite3 is used only although in a beginning it was planned to use RDS and postgresql. these data are rendered in the map and can be.
+- The project is divided in Frontend and Backend, the first one is located in [this branch](https://github.com/Joldiazch/MobileFood/tree/reactapp), the backend in [this one](https://github.com/Joldiazch/MobileFood/tree/api-graphql).
 both deployed in heroku.
 
 ## Technology Stack
