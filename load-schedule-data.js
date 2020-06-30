@@ -10,7 +10,7 @@ trucks.then(obj => {
         const truckId = truck.dataValues.id;
         schedule.map(sch => {
             const {locationdesc, start24, end24, dayofweekstr, optionaltext, cnn} = sch;
-            if (cnn === truck.dataValues.cnn){
+            if (cnn === truck.dataValues.cnn && locationdesc && start24 && end24 && dayofweekstr && optionaltext){
                 models.Schedule.create({
                     truckId,
                     locationdesc,
